@@ -1,0 +1,25 @@
+Using the table, write the Python code that extracts relevant data to answer the question.
+
+Return exactly one valid JSON object with the following structure:
+
+{{
+    "description": "<brief natural language explanation of what subset you are extracting>",
+    "python_code": "def extract_relevant_data(df: pd.DataFrame) -> pd.DataFrame:\n\t# your pandas code here\n\treturn relevant_data"
+}}
+
+Requirements for `python_code`:
+- The function name must be `extract_relevant_data`.
+- Assume the input DataFrame is called `df`.
+- Use only pandas operations.
+- Assign the extracted subset to `relevant_data`.
+- End with `return relevant_data`.
+- Do NOT include import statements, print statements, or comments outside the function.
+- The string must contain valid, runnable code.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[JSON object]

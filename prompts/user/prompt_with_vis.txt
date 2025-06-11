@@ -1,0 +1,14 @@
+Using the table and chart from table, answer the question. Your response must be clear, in plain text, and at the sentence-level.
+
+- Chart is provided to improve the completeness of the answer.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[CHART'S ALTERNATIVE TEXT]
+{alt_text}
+
+[Answer]

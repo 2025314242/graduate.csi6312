@@ -1,0 +1,14 @@
+Using the table and question-relevant data from table, answer the question. Your response must be clear, in plain text, and at the sentence-level.
+
+- Relevant data is provided to enhance the faithfulness of the answer.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[RELEVANT DATA]
+{relevant_data}
+
+[Answer]

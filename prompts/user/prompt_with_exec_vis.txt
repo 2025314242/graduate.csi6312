@@ -1,0 +1,18 @@
+Using the table, question-relevant data and chart from table, answer the question. Your response must be clear, in plain text, and at the sentence-level.
+
+- Relevant data is provided to enhance the faithfulness of the answer.
+- Chart is provided to improve the completeness of the answer.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[RELEVANT DATA]
+{relevant_data}
+
+[CHART'S ALTERNATIVE TEXT]
+{alt_text}
+
+[Answer]

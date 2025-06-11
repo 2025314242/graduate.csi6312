@@ -1,0 +1,31 @@
+Using the table, write the Vega-Lite v5 chart specification that help answer the question.
+
+Return exactly one valid JSON object with the following structure:
+
+{{
+    "description": "<one concise sentence of alternative text>",
+    "vega_lite_spec": {{
+        "mark": "<appropriate chart type>",
+        "encoding": {{
+            /* your encodings using fields from the table */
+        }}{{optional_transform_block}}
+    }}
+}}
+
+Requirements for `vega_lite_spec`:
+- No Markdown fences, no surrounding text. Only the JSON object.
+- `vega_lite_spec` must be a valid Vega-Lite v5 dictionary.  
+- Include `mark` and suitable `encoding` entries.
+- Add a `transform` array if filtering or type conversion is needed.  
+- Do not include a `data` key; the system will inject data later.
+- All field names used in the spec must match the table headers exactly.
+
+This chart will be shown to a multimodal model as visual grounding. Your spec should make the answer more complete by visually highlighting patterns that are difficult to capture in text alone.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[JSON object]

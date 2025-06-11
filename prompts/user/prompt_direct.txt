@@ -1,0 +1,9 @@
+Using the table, answer the question. Your response must be clear, in plain text, and at the sentence-level.
+
+[TABLE]
+{serialized_table}
+
+[QUESTION]
+{question}
+
+[Answer]
